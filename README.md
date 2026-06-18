@@ -16,6 +16,66 @@ A full production-grade ML pipeline built on a synthetic e-commerce dataset of *
     
 
 > **Highlights:** ROC-AUC of **0.9277**, Silhouette Score of **0.906**, Optuna-optimized ensemble with 100 total trials, and interpretability via SHAP + LIME.
+---
+Key Results
+
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Value</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ROC-AUC (Best Model)</td>
+      <td><b>0.9277</b></td>
+      <td>Class-weight tuned LightGBM/XGBoost/CatBoost</td>
+    </tr>
+    <tr>
+      <td>Recall — Churn Class</td>
+      <td><b>0.85</b></td>
+      <td>Critical metric given class imbalance</td>
+    </tr>
+    <tr>
+      <td>Precision — Churn Class</td>
+      <td><b>0.84</b></td>
+      <td>Balanced against recall</td>
+    </tr>
+    <tr>
+      <td>F1-Score — Churn Class</td>
+      <td><b>0.84</b></td>
+      <td>Weighted, on 30% holdout test set</td>
+    </tr>
+    <tr>
+      <td>Clustering Silhouette Score</td>
+      <td><b>0.906</b></td>
+      <td>K-Means (k=3), best across 4 algorithms</td>
+    </tr>
+    <tr>
+      <td>Customer Segments Found</td>
+      <td><b>3</b></td>
+      <td>High-Value Loyal, At-Risk, Disengaged</td>
+    </tr>
+    <tr>
+      <td>Optuna Trials</td>
+      <td><b>100</b></td>
+      <td>50 per study (SMOTE + Class-Weight)</td>
+    </tr>
+    <tr>
+      <td>Features Engineered</td>
+      <td><b>10+</b></td>
+      <td>RFM scores, frustration score, digital engagement, etc.</td>
+    </tr>
+    <tr>
+      <td>Dataset Size</td>
+      <td><b>50,000</b></td>
+      <td>With ~15% churn rate (class imbalanced)</td>
+    </tr>
+  </tbody>
+</table>
+---
 ## Tech Stack
 * **Language:** Python
 * **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
