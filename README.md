@@ -5,13 +5,17 @@
 
 <h2>Project Overview</h2>
 A full production-grade ML pipeline built on a synthetic e-commerce dataset of **50,000 customers** across **25+ features** to:
+
 1.  **Segment** customers using unsupervised clustering
+    
 2.  **Predict** 3-month churn with ensemble classifiers
+    
 3.  **Explain** model decisions using SHAP, LIME, and Partial Dependence Plots
+    
 4.  **Recommend** targeted retention strategies per customer segment
+    
 
 > **Highlights:** ROC-AUC of **0.9277**, Silhouette Score of **0.906**, Optuna-optimized ensemble with 100 total trials, and interpretability via SHAP + LIME.
-
 ## Tech Stack
 * **Language:** Python
 * **Libraries:** Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn
