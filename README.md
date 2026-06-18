@@ -194,7 +194,7 @@ MethodComponentsHard VotingLightGBM + XGBoost + CatBoostSoft VotingLightGBM + XG
 
 ---
 
-Tech Stack
+<h2>Tech Stack</h2>
 
 <table>
   <tr>
