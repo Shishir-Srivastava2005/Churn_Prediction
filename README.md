@@ -1,12 +1,16 @@
-# E-Commerce Customer Segmentation & Churn Prediction
+<h1 align="center"> Customer Churn Prediction</h1>
+<p align="center">
+  <b>End-to-End ML Pipeline · Customer Segmentation · Ensemble Modeling · Explainability</b>
+</p>
 
-## Project Overview
-This project provides a comprehensive data science solution for a large-scale e-commerce company. The goal is to segment customers based on their behavior patterns and predict the likelihood of churn for each segment. This allows the business team to implement data-driven retention strategies.
+<h2>Project Overview</h2>
+A full production-grade ML pipeline built on a synthetic e-commerce dataset of **50,000 customers** across **25+ features** to:
+1.  **Segment** customers using unsupervised clustering
+2.  **Predict** 3-month churn with ensemble classifiers
+3.  **Explain** model decisions using SHAP, LIME, and Partial Dependence Plots
+4.  **Recommend** targeted retention strategies per customer segment
 
-The project addresses real-world data challenges, including:
-* **Hidden Anomalies:** Identifying and correcting illogical data points (e.g., negative purchase counts or age outliers).
-* **Class Imbalance:** Managing datasets where churned users are the minority.
-* **Feature Engineering:** Extracting value from 25+ demographic, behavioral, and financial features.
+> **Highlights:** ROC-AUC of **0.9277**, Silhouette Score of **0.906**, Optuna-optimized ensemble with 100 total trials, and interpretability via SHAP + LIME.
 
 ## Tech Stack
 * **Language:** Python
