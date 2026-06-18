@@ -191,3 +191,52 @@ MethodComponentsHard VotingLightGBM + XGBoost + CatBoostSoft VotingLightGBM + XG
 *   **Partial Dependence Plots** → non-linear churn relationship for top 6 features
     
 *   Business recommendations per segment with estimated revenue impact of 10% churn reduction
+
+---
+
+Tech Stack
+
+<table>
+  <tr>
+    <th>Category</th>
+    <th>Libraries</th>
+  </tr>
+  <tr>
+    <td>Data</td>
+    <td>pandas, numpy</td>
+  </tr>
+  <tr>
+    <td>Visualization</td>
+    <td>matplotlib, seaborn, plotly</td>
+  </tr>
+  <tr>
+    <td>Preprocessing</td>
+    <td>scikit-learn (StandardScaler, RobustScaler, KNNImputer, IterativeImputer), imbalanced-learn (SMOTE)</td>
+  </tr>
+  <tr>
+    <td>Unsupervised</td>
+    <td>KMeans, DBSCAN, AgglomerativeClustering, GaussianMixture, PCA, t-SNE, UMAP</td>
+  </tr>
+  <tr>
+    <td>Supervised</td>
+    <td>XGBoost, LightGBM, CatBoost, RandomForest, LogisticRegression</td>
+  </tr>
+  <tr>
+    <td>Ensembles</td>
+    <td>VotingClassifier, StackingClassifier</td>
+  </tr>
+  <tr>
+    <td>Tuning</td>
+    <td>Optuna (Bayesian Optimization)</td>
+  </tr>
+  <tr>
+    <td>Interpretability</td>
+    <td>SHAP, LIME, Partial Dependence Plots</td>
+  </tr>
+  <tr>
+    <td>Statistics</td>
+    <td>scipy, statsmodels (VIF)</td>
+  </tr>
+</table>
+
+---
